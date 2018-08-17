@@ -1,0 +1,5 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+*.cs text eol=crlf
+*.tt text eol=crlf
+*.targets text eol=crlf
