@@ -10,9 +10,9 @@ const extractSass = new MiniCssExtractPlugin({
 
 module.exports = {
     entry: {
-        polyfills: './src/polyfills.ts',
-        vendor: './src/vendor.ts',
-        main: './src/main.ts'
+        'polyfills': './src/polyfills.ts',
+        'vendor': './src/vendor.ts',
+        'app': './src/main.ts'
     },
 
     resolve: {
@@ -50,28 +50,8 @@ module.exports = {
                 }, {
                     loader: MiniCssExtractPlugin.loader
                 }]
-                // use: extractSass.extract({
-                //     use: [{
-                //         loader: "css-loader"
-
-                //     },
-                //     {
-                //         loader: "sass-loader"
-                //     }, {
-                //         loader: 'import-glob-loader'
-                //     }, {
-                //         loader: MiniCssExtractPlugin.loader
-                //     }]
-                // })
             }
-
         ]
-    },
-
-    optimization: {
-        splitChunks: {
-            chunks: "all"
-        }
     },
 
     plugins: [
