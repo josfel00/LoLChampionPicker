@@ -1,0 +1,46 @@
+{
+  "name": "LoLChampionPicker",
+  "version": "1.0.0",
+  "description": "Provide recommended champions based on enemy and ally picks",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress --port 8080",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --bail"
+  },
+  "keywords": [
+    "angular",
+    "LeagueofLegends"
+  ],
+  "author": "Josfel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/angular": "^1.6.50",
+    "@types/node": "^10.9.1",
+    "awesome-typescript-loader": "^5.2.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@angular/common": "^6.1.4",
+    "@angular/compiler": "^6.1.4",
+    "@angular/core": "^6.1.4",
+    "@angular/platform-browser": "^6.1.4",
+    "@angular/platform-browser-dynamic": "^6.1.4",
+    "angular2-template-loader": "^0.6.2",
+    "core-js": "^2.5.7",
+    "es5-shim": "^4.5.10",
+    "es6-shim": "^0.35.3",
+    "rxjs": "^6.2.2",
+    "zone.js": "^0.8.26"
+  }
+}
